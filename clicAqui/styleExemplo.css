@@ -1,0 +1,129 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(214,189,189);
+    background: linear-gradient(0deg, rgba(214,189,189,1) 13%, rgba(32,178,170,1) 100%);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: black;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    background: #20B2AA;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400italic,700italic,400,700|Fjalla+One);
+
+body {
+    font-size: 18px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #292b33;
+}
+
+h1{
+    font-family: 'Fjalla One', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 1em 0 0 0;
+}
+h2{
+    font-family: 'Fjalla One', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 150%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 1em 0 0 0;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+blockquote {
+    border-left: none;
+    position: relative;
+}
+
+blockquote::before {
+    content: '“';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 48px;
+    font-family: "inherit";
+    font-weight: bold;
+}
+
+blockquote p {
+    margin: 0 0 10px 20px;
+    font-style: italic;
+    font-family: "Georgia";
+}
+
+em {
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+}
+
+.lead {
+    margin-top: 0.25em;
+}
+
+.map-container-2{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-2 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}

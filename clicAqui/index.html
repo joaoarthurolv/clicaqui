@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>ClicAqui</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css"> 
+        <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/bootstrap-social-gh-pages/bootstrap-social.css">
+        
+      
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <div class="fixed-left">
+                
+            </div>
+            <nav id="sidebar" class="p-1" >
+                <div class="sidebar-header">
+                    <h3>ClicAqui</h3>
+                </div>
+                 
+
+                <ul class="list-unstyled">
+
+                    <li class="active">
+                                <div class="cd-filter-block">
+                                     <a href="#filter1" data-toggle="collapse" aria-expanded="false">Região</a>
+
+                                    <ul class="cd-filter-content cd-filters list" id="filter1">
+                                            <label class="container">Litoral
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">Centro
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">Inteior
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                    </ul> 
+                                </div>
+                    </li>
+                    <li class="active">
+                                <div class="cd-filter-block">
+                                     <a href="#filter2" data-toggle="collapse" aria-expanded="false">Preço</a>
+
+                                    <ul class="cd-filter-content cd-filters list" id="filter2">
+                                         <label class="container">$
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">$$
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">$$$
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                    </ul> 
+                                </div>
+                    </li>
+                    <li class="active">
+                                <div class="cd-filter-block">
+                                     <a href="#filter3" data-toggle="collapse" aria-expanded="false">Categoria</a>
+
+                                    <ul class="cd-filter-content cd-filters list" id="filter3">
+                                         <label class="container">Alimentação
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">Eventos
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">Bares
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                             <label class="container">Roupas
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">dsdsdsada
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="container">asdasdasd
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                    </ul> 
+                                </div>
+                    </li>
+ 
+                </ul>           
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-expand-lg navbar-dark ">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" onclick="Mudarestado('sidebar')">
+                                <i class="glyphicon glyphicon-align-justify"></i>        
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Quem somos</a></li>
+                                <li><a href="#">Contato</a></li>
+                                <li><a href="#">Junte-se a nós</a></li>
+                            </ul>
+                            <div id="divBusca" class="">
+                                <input type="text" id="txtBusca" placeholder="Buscar"/>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div style=" background-image: url(img/capa.jpg); height: 15%;" >
+                    
+                </div>
+                
+                <div class="line"></div>
+
+                <div class="row ml-4">
+
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4" data-category=".check1" >
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');" >
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <a href="exemplo.html"><img src="img/passeio.jpg" class="img-fluid rounded"></a>
+                                            <div class="card-overlay"><h2>Clica</h2></div>
+                                            <div class="card-hover">
+                                                <h2>Lorem, ipsum.</h2>
+                                                
+                                            </div>     
+                                        </div>
+                                    </div>      
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                            <h4>Restaurante</h4>
+                                            <p class="card-text">Pequena descrição</p>
+                                            
+                                           
+                                        </div>
+                                    </div>      
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                            <h4>Restaurante</h4>
+                                            <p class="card-text">Pequena descrição</p>
+                                            
+                                           
+                                        </div>
+                                    </div>      
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                            <h4>Restaurante</h4>
+                                            <p class="card-text">Pequena descrição</p>
+                                            
+                                           
+                                        </div>
+                                    </div>      
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                            <h4>Restaurante</h4>
+                                            <p class="card-text">Pequena descrição</p>
+                                            
+                                           
+                                        </div>
+                                    </div>      
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                    <h4>Restaurante</h4>
+                                    <p class="card-text">Pequena descrição</p>
+                                </div>
+                            </div>      
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+          function Mudarestado(el) {
+                var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                       document.getElementById(el).style.display = 'none';
+            }
+    	</script>
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    </body>
+</html>
