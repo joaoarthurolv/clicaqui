@@ -32,7 +32,7 @@ a, a:hover, a:focus {
 }
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: #20B2AA;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -74,13 +74,12 @@ a, a:hover, a:focus {
 
 #sidebar {
     -webkit-box-shadow: 6px 6px 10px #999; 
-     -moz-box-shadow: 6px 6px 10px #999;
-          box-shadow: 6px 6px 10px #999;  
+    -moz-box-shadow: 6px 6px 10px #999;
+    box-shadow: 6px 6px 10px #999;  
     width: 15%;
     background: #20B2AA;
     color: #fff;
-    transition: all 0.3s;
-
+    transition: all 0.3s; 
 }
 
 #sidebar.active {
@@ -305,4 +304,11 @@ a.article, a.article:hover {
 .carousel-caption{
   color: #fff;
   top: 50%;
+}
+
+#footer{
+float: left;
+width: 100%;
+
+background-color: #20B2AA;
 }
