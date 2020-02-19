@@ -27,7 +27,9 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-
+.barra{
+  width: 100%;
+}
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -35,6 +37,7 @@ a, a:hover, a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .navbar-btn {
@@ -73,7 +76,7 @@ a, a:hover, a:focus {
     -webkit-box-shadow: 6px 6px 10px #999; 
      -moz-box-shadow: 6px 6px 10px #999;
           box-shadow: 6px 6px 10px #999;  
-    width: 50%;
+    width: 15%;
     background: #20B2AA;
     color: #fff;
     transition: all 0.3s;
@@ -111,7 +114,7 @@ a, a:hover, a:focus {
 
 #sidebar ul.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #20B2AA;
+    background: black;
 }
 
 
@@ -174,9 +177,10 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #sidebar {
-        margin-left: -250px;
+        display: none;
+        width: 50%;
     }
     #sidebar.active {
         margin-left: 0;
@@ -184,6 +188,7 @@ a.article, a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+
 }
 /* Customize the label (the container) */
 .container {
@@ -270,4 +275,34 @@ a.article, a.article:hover {
  
 #divBusca img{
   float:left;
+}
+@media (min-width: 768px) {
+.carousel-control {
+    padding-top:8%;
+    width:5%;
+}    
+}
+
+@media (min-width: 992px) {
+    .carousel-control {
+    padding-top:9%;
+    width:5%;
+}
+}
+
+@media (min-width: 1200px) { 
+    .carousel-control {
+    padding-top:10%;
+    width:5%;
+}
+}
+.carousel{
+  margin-top: 50px;
+}
+.carousel-inner{
+  height: 200px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
 }

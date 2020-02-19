@@ -11,10 +11,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css"> 
-        <link rel="stylesheet" href="style.css">
-         <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
         <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/bootstrap-social-gh-pages/bootstrap-social.css">
-        
+       
       
     </head>
     <body>
@@ -23,86 +23,25 @@
 
         <div class="wrapper">
             <!-- Sidebar Holder -->
-            <div class="fixed-left">
-                
-            </div>
-            <nav id="sidebar" class="p-1" >
+               
+            <nav id="sidebar" class="p-1 navbar-expand" >
                 <div class="sidebar-header">
-                    <h3>ClicAqui</h3>
+                    <img class="img-fluid" src="img/logo.png">
                 </div>
                  
 
                 <ul class="list-unstyled">
-
                     <li class="active">
                                 <div class="cd-filter-block">
-                                     <a href="#filter1" data-toggle="collapse" aria-expanded="false">Região</a>
-
-                                    <ul class="cd-filter-content cd-filters list" id="filter1">
-                                            <label class="container">Litoral
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">Centro
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">Inteior
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                    </ul> 
-                                </div>
-                    </li>
-                    <li class="active">
-                                <div class="cd-filter-block">
-                                     <a href="#filter2" data-toggle="collapse" aria-expanded="false">Preço</a>
-
-                                    <ul class="cd-filter-content cd-filters list" id="filter2">
-                                         <label class="container">$
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">$$
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">$$$
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                    </ul> 
-                                </div>
-                    </li>
-                    <li class="active">
-                                <div class="cd-filter-block">
-                                     <a href="#filter3" data-toggle="collapse" aria-expanded="false">Categoria</a>
+                                     <a data-toggle="collapse" aria-expanded="false">Categoria</a>
 
                                     <ul class="cd-filter-content cd-filters list" id="filter3">
-                                         <label class="container">Alimentação
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">Eventos
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">Bares
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                             <label class="container">Roupas
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">dsdsdsada
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="container">asdasdasd
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
+                                            <a href="exemploCategoria.html" style="background-color: #20B2AA">Alimentação</a>                                               
+                                            <a href="exemploCategoria.html" style="background-color: #20B2AA">Alimentação</a>
+                    
+                                            <a href="exemploCategoria.html" style="background-color: #20B2AA">Alimentação</a>
+                                               
+                                            <a href="exemploCategoria.html" style="background-color: #20B2AA">Alimentação</a>
                                     </ul> 
                                 </div>
                     </li>
@@ -110,60 +49,96 @@
                 </ul>           
             </nav>
 
-            <!-- Page Content Holder -->
-            <div id="content">
-
-                <nav class="navbar navbar-expand-lg navbar-dark ">
+            <!-- Page Content Holder --> 
+            <div class="container-fluid" id="content">
+                <nav class="navbar navbar-expand-lg navbar-dark  navegacao" style="opacity: 0.8;">
                     <div class="container-fluid">
-
                         <div class="navbar-header">
                             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" onclick="Mudarestado('sidebar')">
                                 <i class="glyphicon glyphicon-align-justify"></i>        
                             </button>
                         </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Quem somos</a></li>
-                                <li><a href="#">Contato</a></li>
-                                <li><a href="#">Junte-se a nós</a></li>
-                            </ul>
-                            <div id="divBusca" class="">
-                                <input type="text" id="txtBusca" placeholder="Buscar"/>
-                                
+                    <button class="navbar-toggler btn-light" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"  aria-expanded="false" aria-label="Menu Colapso">  
+                      <span class="navbar-toggler-icon text-" style="background-color: #20B2AA"></span>
+                    </button>
+                        
+                    <div id="menu" class="collapse navbar-collapse" >
+                      <ul class="navbar-nav ml-auto text-light nav-menu">
+                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="index.html" style="background-color: #20B2AA">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#" style="background-color: #20B2AA">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#" style="background-color: #20B2AA">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#" style="background-color: #20B2AA">Junte-se a nós</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background-image: url(img/bar.jpg);">
+                    <div class="carousel-inner" >
+                        <div class="carousel-item active" >
+                            <div class="carousel-caption" >
+                                <h3>EXTREMOZ</h3>
+                                <p>TEXT</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption">
+                                <h3>A</h3>
+                                <p>TEXT</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption">
+                                <h3>CAPITAL</h3>
+                                <p>TEXT</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption">
+                                <h3>DO </h3>
+                                <p>TEXT</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption">
+                                <h3>PASSINHO</h3>
+                                <p>TEXT</p>
                             </div>
                         </div>
                     </div>
-                </nav>
-                <div style=" background-image: url(img/capa.jpg); height: 15%;" >
-                    
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
                 
                 <div class="line"></div>
-
-                <div class="row ml-4">
-
-                    
+                
+                <h1 class="m-4">Mais quentes da semana<i class="glyphicon glyphicon-menu-down" ></i></h1>
+                <div class="row ml-4" style="margin-top: 10%;"> 
                     <div class="col-xs-12 col-sm-6 col-md-4" data-category=".check1" >
                         <div class="image-flip" ontouchstart="this.classList.toggle('hover');" >
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <a href="exemplo.html"><img src="img/passeio.jpg" class="img-fluid rounded"></a>
-                                            <div class="card-overlay"><h2>Clica</h2></div>
-                                            <div class="card-hover">
-                                                <h2>Lorem, ipsum.</h2>
-                                                
-                                            </div>     
+                                <div class="card">
+                                    <div class=" text-center mt-4">
+                                        <a href="exemplo.html"><img src="img/4x3.gif" class="img-fluid rounded"></a>
+                                        <div class="card-overlay">
+                                            <h2>Clica</h2>
                                         </div>
-                                    </div>      
+                                        <div class="card-hover">
+                                            <h2>Lorem, ipsum.</h2>               
+                                        </div>     
+                                    </div>
+                                </div>      
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                        <div class=" text-center mt-4">
+                                            <a href=""><img src="img/4x3.gif" class="img-fluid rounded"></a>
                                             <h4>Restaurante</h4>
                                             <p class="card-text">Pequena descrição</p>
                                             
@@ -175,8 +150,8 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                        <div class=" text-center mt-4">
+                                            <a href=""><img src="img/4x3.gif" class="img-fluid rounded"></a>
                                             <h4>Restaurante</h4>
                                             <p class="card-text">Pequena descrição</p>
                                             
@@ -191,8 +166,8 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                        <div class=" text-center mt-4">
+                                            <a href=""><img src="img/4x3.gif" class="img-fluid rounded"></a>
                                             <h4>Restaurante</h4>
                                             <p class="card-text">Pequena descrição</p>
                                             
@@ -204,8 +179,8 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                        <div class=" text-center mt-4">
+                                            <a href=""><img src="img/4x3.gif" class="img-fluid rounded"></a>
                                             <h4>Restaurante</h4>
                                             <p class="card-text">Pequena descrição</p>
                                             
@@ -217,17 +192,90 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <a href=""><img src="img/bar.jpg" class="img-fluid rounded"></a>
+                                <div class=" text-center mt-4">
+                                    <a href=""><img src="img/4x3.gif" class="img-fluid rounded"></a>
                                     <h4>Restaurante</h4>
                                     <p class="card-text">Pequena descrição</p>
                                 </div>
                             </div>      
                         </div>
-                    </div> 
+                    </div>         
+                </div>    
+               
+            <div class="col-xs-12" style="margin-top: 10%;">        
+                <div class="container">
+                    <div class="col-xs-12">
+                        <h1 class="m-4">Novidades <i class="glyphicon glyphicon-menu-down" ></i></h1>
+                        
+                        <div class="well">
+                            <div id="myCarousel1" class="carousel slide">
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="https://image.freepik.com/fotos-gratis/neon-sinal-barzinhos-imagem-coquetel_23-2148184280.jpg" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                          
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                            <div class="col-xs-4 col-sm-6 col-md-4"><a href="http://www.jquery2dotnet.com/"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <!--/item-->
+                                </div>
+                                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel1" data-slide="prev">‹</a>
+                                <a class="right carousel-control" href="#myCarousel1" data-slide="next">›</a>
+                            </div>
+                            <!--/myCarousel-->
+                        </div>
+                        <!--/well-->
+                    </div>
                 </div>
+            
             </div>
+            <footer class="page-footer font-small teal pt-4 ">
+                <div class="container-fluid text-center text-md-left">
+                    
+                       
+                </div>
+                <h3 class="text-center">Footer</h3>
+            </footer>
         </div>
+
         <script type="text/javascript">
           function Mudarestado(el) {
                 var display = document.getElementById(el).style.display;

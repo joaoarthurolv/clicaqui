@@ -11,25 +11,28 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css"> 
-        <link rel="stylesheet" href="styleExemplo.css">
+        <link rel="stylesheet" href="css/styleExemplo.css">
          <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
         <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/bootstrap-social-gh-pages/bootstrap-social.css">
         
       
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark " style="opacity: 0.8;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navegacao" style="opacity: 0.8;">
          	<div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"  aria-expanded="false" aria-label="Menu Colapso">  
+              <span class="navbar-toggler-icon text-light"></span>
+            </button>
                 
-             	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Quem somos</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Junte-se a nós</a></li>
-                    </ul>
-                </div>
+            <div id="menu" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto text-light nav-menu">
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold" href="#">Quem somos</a></li>
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold" href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold" href="#">Junte-se a nós</a></li>
+              </ul>
             </div>
+          </div>
         </nav>
         
     <header class="container">
