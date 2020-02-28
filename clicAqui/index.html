@@ -9,6 +9,7 @@
 
          <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css"> 
         <link rel="stylesheet" href="css/style.css">
@@ -25,21 +26,23 @@
             <!-- Sidebar Holder -->
                
             <nav id="sidebar" class="p-1 navbar-expand" >
-                <div class="sidebar-header">
-                    <img class="img-fluid" src="img/logo.png">
-                </div>
-                <ul class="list-unstyled">
-                    <li class="active">
-                        <div class="cd-filter-block">
-                            <h2>Categorias:</h2>
-                            <a  href="exemploCategoria.html">Alimentação</a>
-                            <a  href="exemploCategoria.html">Acessórios/Vestuário</a>
-                            <a  href="exemploCategoria.html">Serviços</a>
-                            <a  href="exemploCategoria.html">Eventos</a>                   
-                        </div>
-                    </li>
- 
-                </ul>           
+                <div id="rolagem" style="position: fixed;">
+                    <div class="sidebar-header">
+                        <img id="logo" class="img-fluid" src="img/logo.png" style="height: 80px;">
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="active">
+                            <div class="cd-filter-block">
+                                <h2>Categorias:</h2>
+                                <a  href="exemploCategoria.html"><i class="glyphicon glyphicon-menu-right" ></i> Alimentação</a>
+                                <a  href="exemploCategoria.html"><i class="glyphicon glyphicon-menu-right" ></i>Acessórios/Vestuário</a>
+                                <a  href="exemploCategoria.html"><i class="glyphicon glyphicon-menu-right" ></i>Serviços</a>
+                                <a  href="exemploCategoria.html"><i class="glyphicon glyphicon-menu-right" ></i>Eventos</a>                   
+                            </div>
+                        </li>
+     
+                    </ul>
+                </div>           
             </nav>
 
             <!-- Page Content Holder --> 
@@ -47,34 +50,39 @@
                 <nav class="navbar navbar-expand-lg navbar-dark  navegacao rounded" style="opacity: 0.8;">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" onclick="Mudarestado('sidebar')">
+                            <button type="button" id="sidebarCollapse" class="navbar-toggler btn-light" onclick="Mudarestado('sidebar');">
                                 <i class="glyphicon glyphicon-align-justify"></i>        
                             </button>
                         </div>
-                    <button class="navbar-toggler btn-light" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"  aria-expanded="false" aria-label="Menu Colapso">  
-                      <span class="navbar-toggler-icon text-" style="background-color: #20B2AA"></span>
-                    </button>
+                        <img class="img-toggler ml-4" src="img/logo.png" style="width: 100px" id="logoTop">
+                        <button class="navbar-toggler btn-light" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"  aria-expanded="false" aria-label="Menu Colapso">  
+                          <span class="navbar-toggler-icon text-" style="background-color: #20B2AA"></span>
+                        </button>
                         
-                    <div id="menu" class="collapse navbar-collapse" >
-                        <div class="col-md-4 col-md-offset-3">
-                            <form action="" class="search-form">
-                                <div class="form-group has-feedback">
-                                    <label for="search" class="sr-only">Search</label>
-                                    <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                        <div id="menu" class="collapse navbar-collapse" >
+                            <!-- 
+                            <div class="col-md-3 col-md-offset-3">
+                                <div class="form-group has-feedback">  
+                                    <input type="text" class="form-control " placeholder="Buscar" />
                                     <span class="glyphicon glyphicon-search form-control-feedback"></span>
                                 </div>
-                            </form>
+                            </div>
+                            -->
+                          <ul class="navbar-nav ml-auto text-light nav-menu">
+                            <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="index.html" style="background-color: #20B2AA">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#" style="background-color: #20B2AA">Quem somos</a></li>
+                            <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#footer" style="background-color: #20B2AA">Contato</a></li>
+                            <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#" style="background-color: #20B2AA">Junte-se a nós</a></li>
+                            <a href="" style="width: 5%; float: right; margin-left: 5%; margin-top: 2%;"><img class="img-fluid" src="img/icons/fbIcon.png" style="width: 50%;"></a>
+                            <a href="" style="width: 5%; float: right; margin-top: 2%;"><img src="img/icons/instaIcon.png" style="width: 50%; "></a>
+                            <a href="" style="width: 5%; float: right; margin-top: 1.6%;"><img src="img/icons/youtIcon.png" style="width: 60%; "></a>
+                            
+                          </ul>
                         </div>
-                      <ul class="navbar-nav ml-auto text-light nav-menu">
-                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="index.html" style="background-color: #20B2AA">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#" style="background-color: #20B2AA">Quem somos</a></li>
-                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#footer" style="background-color: #20B2AA">Contato</a></li>
-                        <li class="nav-item"><a class="nav-link text-light font-weight-bold rounded m-2" href="#" style="background-color: #20B2AA">Junte-se a nós</a></li>
-                      </ul>
                     </div>
-                  </div>
                 </nav>
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background-image: url(img/capa.png);">
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background-image: url(img/capa.jpeg); ">
                     <div class="carousel-inner" >
                         <div class="carousel-item active" >
                             <div class="carousel-caption" >
@@ -311,19 +319,25 @@
         </div>
 
         <script type="text/javascript">
-          function Mudarestado(el) {
+            function Mudarestado(el) {
                 var display = document.getElementById(el).style.display;
-                if(display == "none")
+                if(display == "none"){
                     document.getElementById(el).style.display = 'block';
-                else
-                       document.getElementById(el).style.display = 'none';
+                    document.getElementById("logo").style.display = 'none';
+                    document.getElementById("rolagem").style.position = 'relative';
+                }else{
+                    document.getElementById(el).style.display = 'none';
+                    document.getElementById("logo").style.display = 'block';
+                }
             }
+
+           
+            
     	</script>
 
         <!-- jQuery CDN -->
-         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="node_modules/jquery/dist/jquery.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>

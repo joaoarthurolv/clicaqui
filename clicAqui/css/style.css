@@ -9,7 +9,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-size: 130%;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: Arial Narrow, sans-serif;
     color: #292b33;
 }
 
@@ -38,6 +38,7 @@ a, a:hover, a:focus {
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     width: 100%;
+    font-size: 110%;
 }
 
 .navbar-btn {
@@ -61,21 +62,21 @@ a, a:hover, a:focus {
 .wrapper {
     display: flex;
     align-items: stretch;
+
 }
 
-.card{
- 
+#carta{
+  opacity: 0.8;
+  background-color: #20B2AA;
 }
 
 .card:hover{
-  
+  opacity: 1;
   border: 2px;
 }
 
 #sidebar {
-    -webkit-box-shadow: 6px 6px 10px #999; 
-    -moz-box-shadow: 6px 6px 10px #999;
-    box-shadow: 6px 6px 10px #999;  
+    
     width: 15%;
     background: #20B2AA;
     color: #fff;
@@ -311,53 +312,34 @@ float: left;
 width: 100%;
 background-color: #20B2AA;
 }
-.search-form .form-group {
-  float: right !important;
-  transition: all 0.35s, border-radius 0s;
-  width: 32px;
-  height: 32px;
-  background-color: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  border-radius: 25px;
-  border: 1px solid #ccc;
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
 }
-.search-form .form-group input.form-control {
-  padding-right: 20px;
-  border: 0 none;
-  background: transparent;
-  box-shadow: none;
-  display:block;
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
 }
-.search-form .form-group input.form-control::-webkit-input-placeholder {
-  display: none;
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
 }
-.search-form .form-group input.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  display: none;
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
 }
-.search-form .form-group input.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  display: none;
-}
-.search-form .form-group input.form-control:-ms-input-placeholder {
-  display: none;
-}
-.search-form .form-group:hover,
-.search-form .form-group.hover {
-  width: 100%;
-  border-radius: 4px 25px 25px 4px;
-}
-.search-form .form-group span.form-control-feedback {
-  position: absolute;
-  top: -1px;
-  right: -2px;
-  z-index: 2;
-  display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
-  text-align: center;
-  color: #3596e0;
-  left: initial;
-  font-size: 14px;
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
 }
